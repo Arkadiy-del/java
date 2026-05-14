@@ -26,3 +26,28 @@ public class Main {
         scanner.close();
     }
 }
+
+//variant B
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите количество чисел n: ");
+        int n = scanner.nextInt();
+
+        System.out.println("Введите " + n + " целых чисел:");
+
+        System.out.println("Числа, которые делятся на 3 или на 9:");
+        for (int i = 0; i < n; i++) {
+            int number = scanner.nextInt();
+
+            if (number % 3 == 0) {
+                System.out.print(number + " ");
+            }
+        }
+
+        scanner.close();
+    }
+}
